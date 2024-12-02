@@ -98,7 +98,52 @@ inteligente, <br> encantadora e atraente, chamativa. Assim como o fogo, e ardent
 </p>
 
 <h2>Volte para a tabela de comparação</h2>
-<a href="#tabela">Voltar a tabela</a>
+<a href="#tabela">Voltar a tabela</a><br>
+<br>
+<h2>Formulário</h2>
+<form action="/Formulário/processar.php" method="post">
+    <label for="fnome">Nome completo:</label><br>
+    <input type="text" id="fnome" name="fnome" required><br>
+    <label for="email" required>Seu e-mail:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    <label for="data">Data de nascimento:</label><br>
+    <input type="date" id="data" name="data" required><br>
+    <label for="senha">Insira uma senha:</label><br>
+    <input type="password" id="senha" name="senha" required><br>
+    <label for="numero">Insira seu número de telefone:</label><br>
+    <input type="tel" id="numero" name="numero" required><br>
+
+    <label for="pais">Escolha seu país:</label><br>
+<select id="pais" name="pais" required>
+  <option value="brasil">Brasil</option>
+  <option value="eua">Estados Unidos</option>
+  <option value="espanha">Espanha</option>
+  <option value="franca">França</option>
+</select><br>
+<label for="pais">Gênero:</label><br>
+<input type="radio" id="fem" name="gener" value="fem" required>
+<label for="fem">Feminino</label><br>
+<input type="radio" id="ma" name="gener" value="ma" required>
+<label for="ma">Masculino</label><br>
+<input type="radio" id="p" name="gener" value="p" required>
+<label for="p">Prefiro não dizer</label><br>
+<input type="radio" id="out" name="gener" value="out" required>
+<label for="out">Outro</label><br>
+
+<label for="termo">Você aceita os termos de uso e as condições?</label><br>
+<input type="checkbox" id="no" name="op1" value="sim" required>
+  <label for="op1"> Sim</label><br>
+  <input type="checkbox" id="si" name="op2" value="nao" required>
+  <label for="op2"> Não</label><br>
+  <textarea name="message" rows="15" cols="35" maxlength="1000" minlength="0" placeholder="Escreva a sua opinião aqui.">
+  </textarea><br>
+  <br>
+<input type="reset" value="Resetar"><br>
+<br>
+  <input type="submit" value="Enviar"><br>
+
+
+</form>
 </html>
 <!-- Fim da estrutura HTML -->
 
